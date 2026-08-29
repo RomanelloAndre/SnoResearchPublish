@@ -1,0 +1,14 @@
+---
+title: "Sno Research"
+---
+
+Welcome to Sno Research. This is a future one-stop shop for data and analysis on money markets, financial plumbing, and macroeconomic frameworks. Seperately, but not secondarily, Sno Research equally covers metals markets and their financial plumbing, liquidity managemnt, and their macroeconomic backdrop. Data and analysis are underpinned using quantitative methods in a transparent and rigorous form.
+
+## Sections
+* Interest Rate Watch
+* Repo Rates Monitor
+* Metals Stocks, Trade Volume, Open Interest Watch
+* Macroeconomic Analysis
+* Financial and Commodity Plumbing
+* Commodity Indices
+* Rate Indices

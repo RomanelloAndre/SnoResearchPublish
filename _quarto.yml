@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "Sno Research"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: Rates.qmd
+        text: Rates
+      - href: Metals.qmd
+        text: Metals
+      - href: about.qmd
+        text: About
+
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+
