@@ -8,7 +8,7 @@ Implied policy rate paths and meeting-by-meeting probability distributions deriv
 
 ## Available Central Bank Models
 
-* [**US Federal Reserve (FOMC)**](rates-fed.qmd)  
+* [**US Federal Reserve (FOMC)**](rates_fed.qmd)  
   30-Day Fed Funds Futures (`ZQ`) curve bootstrapped via Regularized WLS.
 
 * **European Central Bank (ECB)** *(In Development)*  
