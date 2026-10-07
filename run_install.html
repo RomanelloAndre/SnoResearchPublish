@@ -187,32 +187,34 @@ Successfully installed scipy-1.18.1
 </div>
 </div>
 </div>
-<div id="9e98f277-19e8-4143-85b6-6587b98a8677" class="cell" data-execution_count="9">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>run fed_rate_engine.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="9e98f277-19e8-4143-85b6-6587b98a8677" class="cell" data-execution_count="1">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>run ecb_rate_engine.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Loading data from data/raw_rates.csv...
-Loaded 8 Fed Funds contract months: [(2026, 10), (2026, 11), (2026, 12), (2027, 1), (2027, 2), (2027, 3), (2027, 4), (2027, 5)]
+<pre><code>Loading ECB contracts from data/raw_rates.csv...
+Loaded 4 contracts: ['202612', '202703', '202706', '202709']
 
-Saved Implied Path to 'data/fomc_curve.csv':
-         meeting_name meeting_date  implied_post_rate
-0  FOMC: Oct 28, 2026   2026-10-28              3.951
-1  FOMC: Dec 09, 2026   2026-12-09              4.129
-2  FOMC: Jan 27, 2027   2027-01-27              4.236
-3  FOMC: Mar 17, 2027   2027-03-17              4.409
-4  FOMC: Apr 28, 2027   2027-04-28              4.510
+Saved Implied ECB Curve to 'data/ecb_curve.csv':
+        meeting_name meeting_date  implied_post_rate
+0  ECB: Oct 29, 2026   2026-10-29              2.726
+1  ECB: Dec 17, 2026   2026-12-17              2.738
+2  ECB: Feb 04, 2027   2027-02-04              2.837
+3  ECB: Mar 18, 2027   2027-03-18              2.989
+4  ECB: Apr 29, 2027   2027-04-29              3.093
+5  ECB: Jun 10, 2027   2027-06-10              3.149
+6  ECB: Jul 22, 2027   2027-07-22              3.197
+7  ECB: Sep 09, 2027   2027-09-09              3.236
+8  ECB: Oct 28, 2027   2027-10-28              3.254
 
-Saved Meeting Probabilities to 'data/fomc_probabilities.csv':
-         meeting_name target_bracket  rate_mid  probability
-0  FOMC: Oct 28, 2026  3.75% - 4.00%      3.88        71.60
-1  FOMC: Oct 28, 2026  4.00% - 4.25%      4.13        28.40
-2  FOMC: Dec 09, 2026  3.75% - 4.00%      3.88        20.62
-3  FOMC: Dec 09, 2026  4.00% - 4.25%      4.13        59.16
-4  FOMC: Dec 09, 2026  4.25% - 4.50%      4.38        20.22
-5  FOMC: Jan 27, 2027  3.75% - 4.00%      3.88        11.80
-6  FOMC: Jan 27, 2027  4.00% - 4.25%      4.13        42.66
-7  FOMC: Jan 27, 2027  4.25% - 4.50%      4.38        36.89
-8  FOMC: Jan 27, 2027  4.50% - 4.75%      4.63         8.65
-9  FOMC: Mar 17, 2027  3.75% - 4.00%      3.88         3.63</code></pre>
+Saved ECB Probabilities to 'data/ecb_probabilities.csv':
+        meeting_name target_rate  rate_num  probability
+0  ECB: Oct 29, 2026       2.50%      2.50         9.60
+1  ECB: Oct 29, 2026       2.75%      2.75        90.40
+2  ECB: Dec 17, 2026       2.50%      2.50         9.14
+3  ECB: Dec 17, 2026       2.75%      2.75        86.52
+4  ECB: Dec 17, 2026       3.00%      3.00         4.34
+5  ECB: Feb 04, 2027       2.50%      2.50         5.52
+6  ECB: Feb 04, 2027       2.75%      2.75        55.88
+7  ECB: Feb 04, 2027       3.00%      3.00        36.88</code></pre>
 </div>
 </div>
 
