@@ -42,15 +42,15 @@
     "text": "FOMC Meeting Probabilities"
   },
   {
-    "objectID": "Rates.html",
-    "href": "Rates.html",
+    "objectID": "rates.html",
+    "href": "rates.html",
     "title": "Interest Rate Central",
     "section": "",
     "text": "Implied policy rate paths and meeting-by-meeting probability distributions derived from daily short-term interest rate futures settlement data."
   },
   {
-    "objectID": "Rates.html#available-central-bank-models",
-    "href": "Rates.html#available-central-bank-models",
+    "objectID": "rates.html#available-central-bank-models",
+    "href": "rates.html#available-central-bank-models",
     "title": "Interest Rate Central",
     "section": "Available Central Bank Models",
     "text": "Available Central Bank Models\n\nUS Federal Reserve (FOMC)\n30-Day Fed Funds Futures (ZQ) on CBOT bootstrapped via Regularized WLS.\nEuropean Central Bank (ECB)\n3-Month €STR Futures (ST3) on Eurex deaveraged via Regularized WLS.\nBank of England (BoE) (Planned)\n3-Month SONIA Futures (SON) on ICE Europe.\nBank of Japan (BoJ) (Planned)\n3-Month TONA Futures (TONA) on OSE."
