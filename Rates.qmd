@@ -2,17 +2,16 @@
 title: "Interest Rate Central"
 ---
 
-This section of the website covers all things interest rates, short and long. 
 
 Implied policy rate paths and meeting-by-meeting probability distributions derived from daily short-term interest rate futures settlement data.
 
 ## Available Central Bank Models
 
 * [**US Federal Reserve (FOMC)**](rates_fed.qmd)  
-  30-Day Fed Funds Futures (`ZQ`) curve bootstrapped via Regularized WLS.
+  30-Day Fed Funds Futures (`ZQ`) on CBOT bootstrapped via Regularized WLS.
 
-* **European Central Bank (ECB)** *(In Development)*  
-  3-Month €STR Futures (`ST3`) on Eurex.
+* [**European Central Bank (ECB)**](rates_ecb.qmd)  
+  3-Month €STR Futures (`ST3`) on Eurex deaveraged via Regularized WLS.
 
 * **Bank of England (BoE)** *(Planned)*  
   3-Month SONIA Futures (`SON`) on ICE Europe.

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://snoquant.com/run_install.html</loc>
-    <lastmod>2026-10-06T23:07:21.630Z</lastmod>
+    <lastmod>2026-10-07T00:18:42.610Z</lastmod>
   </url>
   <url>
     <loc>https://snoquant.com/index.html</loc>
@@ -14,7 +14,11 @@
   </url>
   <url>
     <loc>https://snoquant.com/Rates.html</loc>
-    <lastmod>2026-10-06T23:07:21.637Z</lastmod>
+    <lastmod>2026-10-07T00:15:29.635Z</lastmod>
+  </url>
+  <url>
+    <loc>https://snoquant.com/rates_ecb.html</loc>
+    <lastmod>2026-10-07T00:14:12.516Z</lastmod>
   </url>
   <url>
     <loc>https://snoquant.com/Metals.html</loc>

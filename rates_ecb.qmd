@@ -1,0 +1,105 @@
+---
+title: "European Central Bank Implied Rate"
+format:
+  html:
+    toc: true
+    code-fold: true
+execute:
+  echo: false
+  warning: false
+---
+
+[← Back to Rates Hub](rates.qmd)
+
+Interactive ECB policy path and meeting-by-meeting Deposit Facility Rate (DFR) probabilities derived from 3-Month €STR Futures (`ST3`) on Eurex via Regularized Weighted Linear Least Squares (WLS) curve deaveraging.
+
+## Implied Deposit Facility Rate Path
+
+```{python}
+import pandas as pd
+import plotly.express as px
+
+df_curve = pd.read_csv("data/ecb_curve.csv")
+df_curve["meeting_date"] = pd.to_datetime(df_curve["meeting_date"])
+
+fig_curve = px.line(
+    df_curve,
+    x="meeting_date",
+    y="implied_post_rate",
+    markers=True,
+    title="<b>Implied ECB Deposit Facility Rate Across Upcoming Meetings</b>",
+    labels={
+        "meeting_date": "Governing Council Meeting",
+        "implied_post_rate": "Implied DFR (%)"
+    },
+    color_discrete_sequence=["#003399"]  # Official ECB Blue
+)
+
+fig_curve.update_traces(
+    mode="lines+markers",
+    marker=dict(size=8),
+    hovertemplate="<b>%{x|%b %d, %Y}</b><br>Implied DFR: %{y:.3f}%<extra></extra>"
+)
+
+fig_curve.update_layout(
+    template="plotly_white",
+    xaxis=dict(showgrid=True, tickformat="%b %Y"),
+    yaxis=dict(showgrid=True, ticksuffix="%"),
+    margin=dict(l=40, r=40, t=60, b=40),
+    height=420
+)
+
+fig_curve.show()
+```
+
+## ECB Meeting Probabilities
+
+```{python}
+df_probs = pd.read_csv("data/ecb_probabilities.csv")
+
+fig_probs = px.bar(
+    df_probs,
+    x="target_rate",
+    y="probability",
+    color="meeting_name",
+    barmode="group",
+    text="probability",
+    title="<b>ECB Deposit Facility Rate Target Distributions</b>",
+    labels={
+        "target_rate": "DFR Target Rate",
+        "probability": "Probability (%)",
+        "meeting_name": "ECB Meeting"
+    },
+    color_discrete_sequence=px.colors.qualitative.Set2
+)
+
+fig_probs.update_traces(
+    texttemplate="%{text:.1f}%",
+    textposition="outside"
+)
+
+fig_probs.update_layout(
+    yaxis_range=[0, 105],
+    template="plotly_white",
+    xaxis_title="Deposit Facility Rate Target",
+    yaxis_title="Probability (%)",
+    legend_title="Meeting",
+    margin=dict(l=40, r=40, t=60, b=40),
+    height=480
+)
+
+fig_probs.show()
+```
+
+## Probability Summary Data
+
+```{python}
+pivot_table = df_probs.pivot(
+    index="target_rate",
+    columns="meeting_name",
+    values="probability"
+).fillna(0.0)
+
+pivot_table = pivot_table.map(lambda x: f"{x:.1f}%" if x > 0 else "-")
+pivot_table
+```
