@@ -9,7 +9,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: Rates.qmd
+      - href: rates.qmd
         text: Rates
       - href: Metals.qmd
         text: Metals
