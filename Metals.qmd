@@ -1,5 +1,19 @@
 ---
-title: "Metals"
+title: "Base & Precious Metals Research"
+subtitle: "LME & COMEX Physical Production, Turnover Indices, and Inventory Models"
+format:
+  html:
+    page-layout: full
 ---
 
-This page is under construction.
+## Overview
+
+Quantitative models covering base and precious metals physical supply chains, warehouse stock financing, and exchange turnover indices.
+
+::: {.callout-note}
+### Research Pipeline
+This section is currently under active development. Upcoming releases will feature:
+* **LME-Style Physical & Liquidity Production Weighting Models** (Aluminium, Copper, Zinc, Lead, Nickel, Tin)
+* **Time-Series Analysis on Warehouse Inflows & Trade Finance Spreads**
+* **Contagion and Carry Mechanics across Global Metal Hubs**
+:::

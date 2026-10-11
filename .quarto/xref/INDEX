@@ -1,38 +1,38 @@
 {
+  "metals.qmd": {
+    "metals.html": "f9e0fd2a"
+  },
   "rates.qmd": {
-    "rates.html": "0a61e846"
+    "rates.html": "19aae7a8"
   },
   "rates_ecb.qmd": {
-    "rates_ecb.html": "38241b1c"
+    "rates_ecb.html": "18188164"
   },
   "rates_fed.qmd": {
-    "rates_fed.html": "41319150"
+    "rates_fed.html": "d614383d"
   },
   "rates_boe.qmd": {
-    "rates_boe.html": "138c9313"
-  },
-  "Metals.qmd": {
-    "Metals.html": "fa73be64"
+    "rates_boe.html": "84c6e34c"
   },
   "rates_boc.qmd": {
-    "rates_boc.html": "6a7efcca"
+    "rates_boc.html": "93aa0c34"
   },
   "index.qmd": {
-    "index.html": "267532f0"
+    "index.html": "947d589e"
   },
   "about.qmd": {
-    "about.html": "c1123ba0"
+    "about.html": "0fece659"
   },
   "rates_SNB.qmd": {
-    "rates_SNB.html": "80cc2bd3"
+    "rates_SNB.html": "5f5b4d69"
   },
   "run_install.ipynb": {
-    "run_install.html": "651354b6"
+    "run_install.html": "23ddbd81"
   },
   "rates_boj.qmd": {
-    "rates_boj.html": "441a9aa1"
+    "rates_boj.html": "99cd2d76"
   },
   "rates_rba.qmd": {
-    "rates_rba.html": "06791c48"
+    "rates_rba.html": "b4a493a3"
   }
 }
