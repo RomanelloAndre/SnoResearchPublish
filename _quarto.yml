@@ -9,21 +9,31 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: rates.qmd
-        text: Rates
-      - href: Metals.qmd
+      - text: "Rates"
+        menu:
+          - href: rates_fed.qmd
+            text: "Federal Reserve (Fed)"
+          - href: rates_ecb.qmd
+            text: "European Central Bank (ECB)"
+          - href: rates_boe.qmd
+            text: "Bank of England (BoE)"
+          - href: rates_boj.qmd
+            text: "Bank of Japan (BoJ)"
+          - href: rates_boc.qmd
+            text: "Bank of Canada (BoC)"
+          - href: rates_rba.qmd
+            text: "Reserve Bank of Australia (RBA)"
+          - href: rates_snb.qmd
+            text: "Swiss National Bank (SNB)"
+      - href: metals.qmd
         text: Metals
       - href: about.qmd
         text: About
 
-
 format:
   html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
+    theme: cosmo
     toc: true
-
+    css: styles.css
 
 

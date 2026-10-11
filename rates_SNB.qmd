@@ -1,0 +1,89 @@
+---
+title: "Swiss National Bank (SNB) Implied Policy Path"
+subtitle: "Policy Rate Expectations & Probabilities from Eurex 3-Month SARON Futures"
+format:
+  html:
+    page-layout: full
+---
+
+```{python}
+#| echo: false
+#| warning: false
+#| message: false
+
+import pandas as pd
+import plotly.express as px
+from IPython.display import display, Markdown
+
+df_curve = pd.read_csv("data/snb_implied_curve.csv")
+df_probs = pd.read_csv("data/snb_probabilities.csv")
+as_of = df_curve["as_of_date"].iloc[0]
+
+next_mtg = df_curve.iloc[0]
+current_rate = 0.00
+next_change_bps = round((next_mtg['implied_rate'] - current_rate) * 100, 1)
+
+display(Markdown(f"**As-of Settlement Date:** `{as_of}` | **Current SNB Policy Rate:** `0.00%` | **Next Assessment Implied:** `{next_mtg['implied_rate']:.2f}%` ({next_change_bps:+} bps)"))
+```
+
+## Implied Policy Rate Path
+
+```{python}
+#| echo: false
+#| warning: false
+
+df_curve['meeting_date'] = pd.to_datetime(df_curve['meeting_date'])
+
+fig_curve = px.line(
+    df_curve,
+    x='meeting_date',
+    y='implied_rate',
+    markers=True,
+    labels={'meeting_date': 'Assessment Date', 'implied_rate': 'Implied Policy Rate (%)'},
+    color_discrete_sequence=['#D52B1E']
+)
+fig_curve.update_layout(
+    template='plotly_white',
+    height=420,
+    hovermode='x unified',
+    yaxis_tickformat='.2f'
+)
+fig_curve.update_traces(hovertemplate='Assessment: %{x|%Y-%m-%d}<br>Expected Rate: %{y:.2f}%<extra></extra>')
+fig_curve.show()
+```
+
+## Target Rate Probability Distribution
+
+```{python}
+#| echo: false
+#| warning: false
+
+fig_probs = px.bar(
+    df_probs,
+    x="target_rate",
+    y="probability",
+    color="meeting_name",
+    barmode="group",
+    text="probability",
+    labels={"target_rate": "Target Policy Rate", "probability": "Probability (%)", "meeting_name": "SNB Assessment"},
+    color_discrete_sequence=px.colors.qualitative.Set1
+)
+fig_probs.update_traces(texttemplate='%{text:.1f}%', textposition='outside')
+fig_probs.update_layout(
+    yaxis_range=[0, 105],
+    template="plotly_white",
+    height=480,
+    xaxis_title="Target Policy Rate",
+    yaxis_title="Probability (%)"
+)
+fig_probs.show()
+```
+
+### Probability Matrix
+
+```{python}
+#| echo: false
+
+pivot_table = df_probs.pivot(index="target_rate", columns="meeting_name", values="probability").fillna(0.0)
+pivot_table
+```

@@ -1,0 +1,15 @@
+meeting_name,target_rate,rate_numeric,probability,implied_rate,as_of_date
+"SNB Assessment: Dec 10, 2026",0.00%,0.0,74.0,0.065,2026-10-11
+"SNB Assessment: Dec 10, 2026",0.25%,0.25,26.0,0.065,2026-10-11
+"SNB Assessment: Mar 18, 2027",0.00%,0.0,25.46,0.229,2026-10-11
+"SNB Assessment: Mar 18, 2027",0.25%,0.25,57.49,0.229,2026-10-11
+"SNB Assessment: Mar 18, 2027",0.50%,0.5,17.06,0.229,2026-10-11
+"SNB Assessment: Jun 17, 2027",0.00%,0.0,7.13,0.409,2026-10-11
+"SNB Assessment: Jun 17, 2027",0.25%,0.25,34.42,0.409,2026-10-11
+"SNB Assessment: Jun 17, 2027",0.50%,0.5,46.17,0.409,2026-10-11
+"SNB Assessment: Jun 17, 2027",0.75%,0.75,12.28,0.409,2026-10-11
+"SNB Assessment: Sep 23, 2027",0.00%,0.0,2.68,0.565,2026-10-11
+"SNB Assessment: Sep 23, 2027",0.25%,0.25,17.39,0.565,2026-10-11
+"SNB Assessment: Sep 23, 2027",0.50%,0.5,38.84,0.565,2026-10-11
+"SNB Assessment: Sep 23, 2027",0.75%,0.75,33.43,0.565,2026-10-11
+"SNB Assessment: Sep 23, 2027",1.00%,1.0,7.66,0.565,2026-10-11

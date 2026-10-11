@@ -19,5 +19,23 @@
   },
   "rates_ecb.qmd": {
     "rates_ecb.html": "aefc5770"
+  },
+  "rates.qmd": {
+    "rates.html": "445e3862"
+  },
+  "rates_boe.qmd": {
+    "rates_boe.html": "c76df724"
+  },
+  "rates_boj.qmd": {
+    "rates_boj.html": "79885cc3"
+  },
+  "rates_boc.qmd": {
+    "rates_boc.html": "44ea5da8"
+  },
+  "rates_SNB.qmd": {
+    "rates_SNB.html": "18805cce"
+  },
+  "rates_rba.qmd": {
+    "rates_rba.html": "fe14e950"
   }
 }

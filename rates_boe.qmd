@@ -1,0 +1,89 @@
+---
+title: "Bank of England (BoE) Implied Policy Path"
+subtitle: "Deaveraged Policy Expectations & Probabilities from ICE 3-Month SONIA Futures"
+format:
+  html:
+    page-layout: full
+---
+
+```{python}
+#| echo: false
+#| warning: false
+#| message: false
+
+import pandas as pd
+import plotly.express as px
+from IPython.display import display, Markdown
+
+df_curve = pd.read_csv("data/boe_implied_curve.csv")
+df_probs = pd.read_csv("data/boe_probabilities.csv")
+as_of = df_curve["as_of_date"].iloc[0]
+
+next_mtg = df_curve.iloc[0]
+current_rate = 3.75
+next_change_bps = round((next_mtg['implied_rate'] - current_rate) * 100, 1)
+
+display(Markdown(f"**As-of Settlement Date:** `{as_of}` | **Current Bank Rate:** `3.75%` | **Next Meeting Implied:** `{next_mtg['implied_rate']:.2f}%` ({next_change_bps:+} bps)"))
+```
+
+## Implied Policy Rate Path
+
+```{python}
+#| echo: false
+#| warning: false
+
+df_curve['meeting_date'] = pd.to_datetime(df_curve['meeting_date'])
+
+fig_curve = px.line(
+    df_curve,
+    x='meeting_date',
+    y='implied_rate',
+    markers=True,
+    labels={'meeting_date': 'MPC Decision Date', 'implied_rate': 'Implied Bank Rate (%)'},
+    color_discrete_sequence=['#A6192E']
+)
+fig_curve.update_layout(
+    template='plotly_white',
+    height=420,
+    hovermode='x unified',
+    yaxis_tickformat='.2f'
+)
+fig_curve.update_traces(hovertemplate='Meeting: %{x|%Y-%m-%d}<br>Expected Rate: %{y:.2f}%<extra></extra>')
+fig_curve.show()
+```
+
+## Target Rate Probability Distribution
+
+```{python}
+#| echo: false
+#| warning: false
+
+fig_probs = px.bar(
+    df_probs,
+    x="target_rate",
+    y="probability",
+    color="meeting_name",
+    barmode="group",
+    text="probability",
+    labels={"target_rate": "Target Bank Rate", "probability": "Probability (%)", "meeting_name": "MPC Meeting"},
+    color_discrete_sequence=px.colors.qualitative.Dark24
+)
+fig_probs.update_traces(texttemplate='%{text:.1f}%', textposition='outside')
+fig_probs.update_layout(
+    yaxis_range=[0, 105],
+    template="plotly_white",
+    height=480,
+    xaxis_title="Target Bank Rate",
+    yaxis_title="Probability (%)"
+)
+fig_probs.show()
+```
+
+### Probability Matrix
+
+```{python}
+#| echo: false
+
+pivot_table = df_probs.pivot(index="target_rate", columns="meeting_name", values="probability").fillna(0.0)
+pivot_table
+```

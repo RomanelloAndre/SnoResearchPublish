@@ -1,31 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://snoquant.com/rates_rba.html</loc>
+    <lastmod>2026-10-11T13:17:31.577Z</lastmod>
+  </url>
+  <url>
     <loc>https://snoquant.com/run_install.html</loc>
-    <lastmod>2026-10-07T00:18:42.610Z</lastmod>
+    <lastmod>2026-10-11T12:42:59.632Z</lastmod>
   </url>
   <url>
-    <loc>https://snoquant.com/index.html</loc>
-    <lastmod>2026-10-06T23:07:21.633Z</lastmod>
+    <loc>https://snoquant.com/about.html</loc>
+    <lastmod>2026-10-06T23:07:21.620Z</lastmod>
   </url>
   <url>
-    <loc>https://snoquant.com/rates_fed.html</loc>
-    <lastmod>2026-10-06T23:07:21.639Z</lastmod>
+    <loc>https://snoquant.com/rates_boc.html</loc>
+    <lastmod>2026-10-11T13:15:59.277Z</lastmod>
   </url>
   <url>
-    <loc>https://snoquant.com/Rates.html</loc>
-    <lastmod>2026-10-07T00:15:29.635Z</lastmod>
+    <loc>https://snoquant.com/rates_boe.html</loc>
+    <lastmod>2026-10-11T13:09:39.488Z</lastmod>
   </url>
   <url>
     <loc>https://snoquant.com/rates_ecb.html</loc>
     <lastmod>2026-10-07T00:14:12.516Z</lastmod>
   </url>
   <url>
+    <loc>https://snoquant.com/rates.html</loc>
+    <lastmod>2026-10-07T00:15:29.635Z</lastmod>
+  </url>
+  <url>
+    <loc>https://snoquant.com/rates_fed.html</loc>
+    <lastmod>2026-10-06T23:07:21.639Z</lastmod>
+  </url>
+  <url>
     <loc>https://snoquant.com/Metals.html</loc>
     <lastmod>2026-10-06T23:07:21.637Z</lastmod>
   </url>
   <url>
-    <loc>https://snoquant.com/about.html</loc>
-    <lastmod>2026-10-06T23:07:21.620Z</lastmod>
+    <loc>https://snoquant.com/index.html</loc>
+    <lastmod>2026-10-06T23:07:21.633Z</lastmod>
+  </url>
+  <url>
+    <loc>https://snoquant.com/rates_SNB.html</loc>
+    <lastmod>2026-10-11T13:20:08.125Z</lastmod>
+  </url>
+  <url>
+    <loc>https://snoquant.com/rates_boj.html</loc>
+    <lastmod>2026-10-11T13:14:23.044Z</lastmod>
   </url>
 </urlset>
