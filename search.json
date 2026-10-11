@@ -147,11 +147,18 @@
     "text": "FOMC Meeting Probabilities"
   },
   {
-    "objectID": "Metals.html",
-    "href": "Metals.html",
-    "title": "Metals",
+    "objectID": "metals.html",
+    "href": "metals.html",
+    "title": "Base & Precious Metals Research",
     "section": "",
-    "text": "This page is under construction."
+    "text": "Quantitative models covering base and precious metals physical supply chains, warehouse stock financing, and exchange turnover indices.\n\n\n\n\n\n\nNoteResearch Pipeline\n\n\n\nThis section is currently under active development. Upcoming releases will feature: * LME-Style Physical & Liquidity Production Weighting Models (Aluminium, Copper, Zinc, Lead, Nickel, Tin) * Time-Series Analysis on Warehouse Inflows & Trade Finance Spreads * Contagion and Carry Mechanics across Global Metal Hubs"
+  },
+  {
+    "objectID": "metals.html#overview",
+    "href": "metals.html#overview",
+    "title": "Base & Precious Metals Research",
+    "section": "",
+    "text": "Quantitative models covering base and precious metals physical supply chains, warehouse stock financing, and exchange turnover indices.\n\n\n\n\n\n\nNoteResearch Pipeline\n\n\n\nThis section is currently under active development. Upcoming releases will feature: * LME-Style Physical & Liquidity Production Weighting Models (Aluminium, Copper, Zinc, Lead, Nickel, Tin) * Time-Series Analysis on Warehouse Inflows & Trade Finance Spreads * Contagion and Carry Mechanics across Global Metal Hubs"
   },
   {
     "objectID": "index.html",
