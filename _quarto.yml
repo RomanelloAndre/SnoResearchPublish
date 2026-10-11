@@ -11,6 +11,9 @@ website:
         text: Home
       - text: "Rates"
         menu:
+          - href: rates.qmd
+            text: "Overview & Publications"
+          - text: "---"
           - href: rates_fed.qmd
             text: "Federal Reserve (Fed)"
           - href: rates_ecb.qmd
@@ -34,6 +37,3 @@ format:
   html:
     theme: cosmo
     toc: true
-    css: styles.css
-
-

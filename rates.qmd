@@ -1,20 +1,101 @@
 ---
-title: "Interest Rate Central"
+title: "Global Interest Rates & Central Bank Policy"
+subtitle: "STIR-Futures Implied Policy Expectations, Term Structures, and Quantitative Research"
+format:
+  html:
+    page-layout: full
 ---
 
+```{python}
+#| echo: false
+#| warning: false
+#| message: false
 
-Implied policy rate paths and meeting-by-meeting probability distributions derived from daily short-term interest rate futures settlement data.
+import os
+import pandas as pd
+from IPython.display import display, HTML
 
-## Available Central Bank Models
+# Central bank current policy target benchmarks
+CURRENT_RATES = {
+    'FED': {'name': 'Federal Reserve (Fed)', 'rate': 5.25, 'file': 'data/fed_implied_curve.csv', 'link': 'rates_fed.html'},
+    'ECB': {'name': 'European Central Bank (ECB)', 'rate': 3.50, 'file': 'data/ecb_implied_curve.csv', 'link': 'rates_ecb.html'},
+    'BOE': {'name': 'Bank of England (BoE)', 'rate': 3.75, 'file': 'data/boe_implied_curve.csv', 'link': 'rates_boe.html'},
+    'BOJ': {'name': 'Bank of Japan (BoJ)', 'rate': 1.25, 'file': 'data/boj_implied_curve.csv', 'link': 'rates_boj.html'},
+    'BOC': {'name': 'Bank of Canada (BoC)', 'rate': 2.25, 'file': 'data/boc_implied_curve.csv', 'link': 'rates_boc.html'},
+    'RBA': {'name': 'Reserve Bank of Australia (RBA)', 'rate': 4.60, 'file': 'data/rba_implied_curve.csv', 'link': 'rates_rba.html'},
+    'SNB': {'name': 'Swiss National Bank (SNB)', 'rate': 0.00, 'file': 'data/snb_implied_curve.csv', 'link': 'rates_snb.html'}
+}
 
-* [**US Federal Reserve (FOMC)**](rates_fed.qmd)  
-  30-Day Fed Funds Futures (`ZQ`) on CBOT bootstrapped via Regularized WLS.
+summary_rows = []
 
-* [**European Central Bank (ECB)**](rates_ecb.qmd)  
-  3-Month €STR Futures (`ST3`) on Eurex deaveraged via Regularized WLS.
+for key, meta in CURRENT_RATES.items():
+    if os.path.exists(meta['file']):
+        df = pd.read_csv(meta['file'])
+        if not df.empty:
+            next_mtg = df.iloc[0]
+            next_date = next_mtg.get('meeting_date', 'N/A')
+            next_implied = next_mtg.get('implied_rate', 0.0)
+            cur_rate = meta['rate']
+            change_bps = round((next_implied - cur_rate) * 100, 1)
+            
+            summary_rows.append({
+                'Central Bank': f"<a href='{meta['link']}'><b>{meta['name']}</b></a>",
+                'Current Policy Rate': f"{cur_rate:.2f}%",
+                'Next Meeting Date': str(next_date),
+                'Next Implied Rate': f"{next_implied:.2f}%",
+                'Expected Move (bps)': f"{change_bps:+} bps"
+            })
 
-* **Bank of England (BoE)** *(Planned)*  
-  3-Month SONIA Futures (`SON`) on ICE Europe.
+df_summary = pd.DataFrame(summary_rows)
+```
 
-* **Bank of Japan (BoJ)** *(Planned)*  
-  3-Month TONA Futures (`TONA`) on OSE.
+## Implied Policy Rates Central
+
+Below is a live cross-market summary derived from our automated regularized WLS bootstrapping engines across global exchange-traded futures.
+
+```{python}
+#| echo: false
+#| warning: false
+
+if not df_summary.empty:
+    display(HTML(df_summary.to_html(escape=False, index=False, classes="table table-hover table-striped")))
+else:
+    print("Run the central bank engines to populate the summary table.")
+```
+
+::: {.callout-note}
+### Central Bank Models Hub
+Click on any central bank above or navigate via the **Rates** menu to explore individual meeting-by-meeting probability distributions, Markov chain step trees, and term structure paths.
+:::
+
+---
+
+## Research & Publications
+
+*Quantitative macro notes, monetary policy transmission models, rate curve research, and correlations between short-term rates and trade financing.*
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .h-100}
+::: {.card-body}
+<h5 class="card-title">Interest Rate Changes & Commodity Stocks</h5>
+<h6 class="card-subtitle mb-2 text-muted">Methodology Note</h6>
+<p class="card-text">Unveiling the lagged and contemporaneous relationships between interest rate cycles and commodity inventories: using time-series analysis to measure how trade financing conditions impact metal inflows across the world's top trade hubs.</p>
+<a href="#" class="btn btn-outline-primary btn-sm disabled">Coming Soon</a>
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .h-100}
+::: {.card-body}
+<h5 class="card-title">Contagion Risks in Eurozone Sovereign Bonds</h5>
+<h6 class="card-subtitle mb-2 text-muted">Quantitative Note</h6>
+<p class="card-text">Measuring the pricing of contagion risks in the Eurozone bond market: applying time-series models to quantify the transmission and impact of higher core sovereign yields on periphery bond spreads.</p>
+<a href="#" class="btn btn-outline-primary btn-sm disabled">Coming Soon</a>
+:::
+:::
+:::
+
+:::
