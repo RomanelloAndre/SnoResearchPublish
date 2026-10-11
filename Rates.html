@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Interest Rate Central – Sno Research</title>
+<title>Global Interest Rates &amp; Central Bank Policy – Sno Research</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,7 +29,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -73,9 +73,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
-<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -104,6 +106,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Rates</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-rates">    
+        <li>
+    <a class="dropdown-item" href="./rates.html">
+ <span class="dropdown-text">Overview &amp; Publications</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
         <li>
     <a class="dropdown-item" href="./rates_fed.html">
  <span class="dropdown-text">Federal Reserve (Fed)</span></a>
@@ -150,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -158,21 +165,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#available-central-bank-models" id="toc-available-central-bank-models" class="nav-link active" data-scroll-target="#available-central-bank-models">Available Central Bank Models</a></li>
+  <li><a href="#implied-policy-rates-central" id="toc-implied-policy-rates-central" class="nav-link active" data-scroll-target="#implied-policy-rates-central">Implied Policy Rates Central</a></li>
+  <li><a href="#research-publications" id="toc-research-publications" class="nav-link" data-scroll-target="#research-publications">Research &amp; Publications</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Interest Rate Central</h1>
+<h1 class="title">Global Interest Rates &amp; Central Bank Policy</h1>
+<p class="subtitle lead">STIR-Futures Implied Policy Expectations, Term Structures, and Quantitative Research</p>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -184,19 +193,113 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Implied policy rate paths and meeting-by-meeting probability distributions derived from daily short-term interest rate futures settlement data.</p>
-<section id="available-central-bank-models" class="level2">
-<h2 class="anchored" data-anchor-id="available-central-bank-models">Available Central Bank Models</h2>
-<ul>
-<li><p><a href="./rates_fed.html"><strong>US Federal Reserve (FOMC)</strong></a><br>
-30-Day Fed Funds Futures (<code>ZQ</code>) on CBOT bootstrapped via Regularized WLS.</p></li>
-<li><p><a href="./rates_ecb.html"><strong>European Central Bank (ECB)</strong></a><br>
-3-Month €STR Futures (<code>ST3</code>) on Eurex deaveraged via Regularized WLS.</p></li>
-<li><p><strong>Bank of England (BoE)</strong> <em>(Planned)</em><br>
-3-Month SONIA Futures (<code>SON</code>) on ICE Europe.</p></li>
-<li><p><strong>Bank of Japan (BoJ)</strong> <em>(Planned)</em><br>
-3-Month TONA Futures (<code>TONA</code>) on OSE.</p></li>
-</ul>
+<section id="implied-policy-rates-central" class="level2">
+<h2 class="anchored" data-anchor-id="implied-policy-rates-central">Implied Policy Rates Central</h2>
+<p>Below is a live cross-market summary derived from our automated regularized WLS bootstrapping engines across global exchange-traded futures.</p>
+<div id="59aaf399" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<table class="dataframe table table-hover table-striped caption-top table-sm small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Central Bank</th>
+<th data-quarto-table-cell-role="th">Current Policy Rate</th>
+<th data-quarto-table-cell-role="th">Next Meeting Date</th>
+<th data-quarto-table-cell-role="th">Next Implied Rate</th>
+<th data-quarto-table-cell-role="th">Expected Move (bps)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="rates_boe.html"><strong>Bank of England (BoE)</strong></a></td>
+<td>3.75%</td>
+<td>2026-11-05</td>
+<td>4.04%</td>
+<td>+28.9 bps</td>
+</tr>
+<tr class="even">
+<td><a href="rates_boj.html"><strong>Bank of Japan (BoJ)</strong></a></td>
+<td>1.25%</td>
+<td>2026-10-30</td>
+<td>1.25%</td>
+<td>+0.4 bps</td>
+</tr>
+<tr class="odd">
+<td><a href="rates_boc.html"><strong>Bank of Canada (BoC)</strong></a></td>
+<td>2.25%</td>
+<td>2026-10-28</td>
+<td>2.38%</td>
+<td>+13.4 bps</td>
+</tr>
+<tr class="even">
+<td><a href="rates_rba.html"><strong>Reserve Bank of Australia (RBA)</strong></a></td>
+<td>4.60%</td>
+<td>2026-11-03</td>
+<td>4.67%</td>
+<td>+6.7 bps</td>
+</tr>
+<tr class="odd">
+<td><a href="rates_snb.html"><strong>Swiss National Bank (SNB)</strong></a></td>
+<td>0.00%</td>
+<td>2026-12-10</td>
+<td>0.07%</td>
+<td>+6.5 bps</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Central Bank Models Hub
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Click on any central bank above or navigate via the <strong>Rates</strong> menu to explore individual meeting-by-meeting probability distributions, Markov chain step trees, and term structure paths.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="research-publications" class="level2">
+<h2 class="anchored" data-anchor-id="research-publications">Research &amp; Publications</h2>
+<p><em>Quantitative macro notes, monetary policy transmission models, rate curve research, and correlations between short-term rates and trade financing.</em></p>
+<div class="grid">
+<div class="g-col-12 g-col-md-6">
+<div class="card h-100">
+<div class="card-body">
+<h5 class="card-title anchored">
+Interest Rate Changes &amp; Commodity Stocks
+</h5>
+<h6 class="card-subtitle mb-2 text-muted anchored">
+Methodology Note
+</h6>
+<p class="card-text">
+Unveiling the lagged and contemporaneous relationships between interest rate cycles and commodity inventories: using time-series analysis to measure how trade financing conditions impact metal inflows across the world’s top trade hubs.
+</p>
+<p><a href="#" class="btn btn-outline-primary btn-sm disabled">Coming Soon</a></p>
+</div>
+</div>
+</div>
+<div class="g-col-12 g-col-md-6">
+<div class="card h-100">
+<div class="card-body">
+<h5 class="card-title anchored">
+Contagion Risks in Eurozone Sovereign Bonds
+</h5>
+<h6 class="card-subtitle mb-2 text-muted anchored">
+Quantitative Note
+</h6>
+<p class="card-text">
+Measuring the pricing of contagion risks in the Eurozone bond market: applying time-series models to quantify the transmission and impact of higher core sovereign yields on periphery bond spreads.
+</p>
+<p><a href="#" class="btn btn-outline-primary btn-sm disabled">Coming Soon</a></p>
+</div>
+</div>
+</div>
+</div>
 
 
 </section>

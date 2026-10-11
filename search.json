@@ -107,16 +107,23 @@
   {
     "objectID": "rates.html",
     "href": "rates.html",
-    "title": "Interest Rate Central",
+    "title": "Global Interest Rates & Central Bank Policy",
     "section": "",
-    "text": "Implied policy rate paths and meeting-by-meeting probability distributions derived from daily short-term interest rate futures settlement data."
+    "text": "Below is a live cross-market summary derived from our automated regularized WLS bootstrapping engines across global exchange-traded futures.\n\n\n\n\n\nCentral Bank\nCurrent Policy Rate\nNext Meeting Date\nNext Implied Rate\nExpected Move (bps)\n\n\n\n\nBank of England (BoE)\n3.75%\n2026-11-05\n4.04%\n+28.9 bps\n\n\nBank of Japan (BoJ)\n1.25%\n2026-10-30\n1.25%\n+0.4 bps\n\n\nBank of Canada (BoC)\n2.25%\n2026-10-28\n2.38%\n+13.4 bps\n\n\nReserve Bank of Australia (RBA)\n4.60%\n2026-11-03\n4.67%\n+6.7 bps\n\n\nSwiss National Bank (SNB)\n0.00%\n2026-12-10\n0.07%\n+6.5 bps\n\n\n\n\n\n\n\n\n\n\n\nNoteCentral Bank Models Hub\n\n\n\nClick on any central bank above or navigate via the Rates menu to explore individual meeting-by-meeting probability distributions, Markov chain step trees, and term structure paths."
   },
   {
-    "objectID": "rates.html#available-central-bank-models",
-    "href": "rates.html#available-central-bank-models",
-    "title": "Interest Rate Central",
-    "section": "Available Central Bank Models",
-    "text": "Available Central Bank Models\n\nUS Federal Reserve (FOMC)\n30-Day Fed Funds Futures (ZQ) on CBOT bootstrapped via Regularized WLS.\nEuropean Central Bank (ECB)\n3-Month €STR Futures (ST3) on Eurex deaveraged via Regularized WLS.\nBank of England (BoE) (Planned)\n3-Month SONIA Futures (SON) on ICE Europe.\nBank of Japan (BoJ) (Planned)\n3-Month TONA Futures (TONA) on OSE."
+    "objectID": "rates.html#implied-policy-rates-central",
+    "href": "rates.html#implied-policy-rates-central",
+    "title": "Global Interest Rates & Central Bank Policy",
+    "section": "",
+    "text": "Below is a live cross-market summary derived from our automated regularized WLS bootstrapping engines across global exchange-traded futures.\n\n\n\n\n\nCentral Bank\nCurrent Policy Rate\nNext Meeting Date\nNext Implied Rate\nExpected Move (bps)\n\n\n\n\nBank of England (BoE)\n3.75%\n2026-11-05\n4.04%\n+28.9 bps\n\n\nBank of Japan (BoJ)\n1.25%\n2026-10-30\n1.25%\n+0.4 bps\n\n\nBank of Canada (BoC)\n2.25%\n2026-10-28\n2.38%\n+13.4 bps\n\n\nReserve Bank of Australia (RBA)\n4.60%\n2026-11-03\n4.67%\n+6.7 bps\n\n\nSwiss National Bank (SNB)\n0.00%\n2026-12-10\n0.07%\n+6.5 bps\n\n\n\n\n\n\n\n\n\n\n\nNoteCentral Bank Models Hub\n\n\n\nClick on any central bank above or navigate via the Rates menu to explore individual meeting-by-meeting probability distributions, Markov chain step trees, and term structure paths."
+  },
+  {
+    "objectID": "rates.html#research-publications",
+    "href": "rates.html#research-publications",
+    "title": "Global Interest Rates & Central Bank Policy",
+    "section": "Research & Publications",
+    "text": "Research & Publications\nQuantitative macro notes, monetary policy transmission models, rate curve research, and correlations between short-term rates and trade financing.\n\n\n\n\n\nInterest Rate Changes & Commodity Stocks\n\n\nMethodology Note\n\n\nUnveiling the lagged and contemporaneous relationships between interest rate cycles and commodity inventories: using time-series analysis to measure how trade financing conditions impact metal inflows across the world’s top trade hubs.\n\nComing Soon\n\n\n\n\n\n\n\nContagion Risks in Eurozone Sovereign Bonds\n\n\nQuantitative Note\n\n\nMeasuring the pricing of contagion risks in the Eurozone bond market: applying time-series models to quantify the transmission and impact of higher core sovereign yields on periphery bond spreads.\n\nComing Soon"
   },
   {
     "objectID": "rates_fed.html",
