@@ -28,7 +28,7 @@ website:
             text: "Reserve Bank of Australia (RBA)"
           - href: rates_snb.qmd
             text: "Swiss National Bank (SNB)"
-      - href: metals.qmd
+      - href: metals.html
         text: Metals
       - href: about.qmd
         text: About
