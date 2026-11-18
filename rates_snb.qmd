@@ -87,3 +87,13 @@ fig_probs.show()
 pivot_table = df_probs.pivot(index="target_rate", columns="meeting_name", values="probability").fillna(0.0)
 pivot_table
 ```
+
+### Meeting-by-Meeting Probability Breakdown
+
+```{python}
+#| echo: false
+#| output: asis
+from meeting_tabs import render_meeting_tabs
+
+render_meeting_tabs("data/snb_probabilities.csv", "snb_rate_engine.py", "CURRENT_SNB_RATE")
+```
