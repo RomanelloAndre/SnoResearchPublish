@@ -1,0 +1,60 @@
+---
+title: "US Federal Reserve — Implied Rates"
+format:
+  html:
+    toc: true
+    code-fold: true
+execute:
+  echo: false
+  warning: false
+---
+
+[← Back to Rates Hub](rates.qmd)
+
+Interactive FOMC policy path and meeting probabilities derived from 30-Day Fed Funds Futures (`ZQ`) via Regularized Weighted Linear Least Squares (WLS).
+
+## Implied Policy Rate Path
+
+```{python}
+import pandas as pd
+import plotly.express as px
+
+df_curve = pd.read_csv("data/fomc_curve.csv")
+df_curve["meeting_date"] = pd.to_datetime(df_curve["meeting_date"])
+
+fig_curve = px.line(
+    df_curve,
+    x="meeting_date",
+    y="implied_post_rate",
+    markers=True,
+    title="<b>Implied EFFR Path Across Upcoming FOMC Meetings</b>",
+    labels={"meeting_date": "FOMC Meeting Date", "implied_post_rate": "Implied Policy Rate (%)"},
+    color_discrete_sequence=["#1f77b4"]
+)
+
+fig_curve.update_traces(mode="lines+markers", marker=dict(size=8), hovertemplate="<b>%{x|%b %d, %Y}</b><br>Implied EFFR: %{y:.3f}%<extra></extra>")
+fig_curve.update_layout(template="plotly_white", margin=dict(l=40, r=40, t=60, b=40), height=420)
+fig_curve.show()
+```
+
+## FOMC Meeting Probabilities
+
+```{python}
+df_probs = pd.read_csv("data/fomc_probabilities.csv")
+
+fig_probs = px.bar(
+    df_probs,
+    x="target_bracket",
+    y="probability",
+    color="meeting_name",
+    barmode="group",
+    text="probability",
+    title="<b>Target Rate Probability Distributions</b>",
+    labels={"target_bracket": "Target Rate Bracket", "probability": "Probability (%)", "meeting_name": "FOMC Meeting"},
+    color_discrete_sequence=px.colors.qualitative.Plotly
+)
+
+fig_probs.update_traces(texttemplate="%{text:.1f}%", textposition="outside")
+fig_probs.update_layout(yaxis_range=[0, 105], template="plotly_white", margin=dict(l=40, r=40, t=60, b=40), height=480)
+fig_probs.show()
+```

@@ -4,7 +4,7 @@
     "href": "rates_rba.html",
     "title": "Reserve Bank of Australia (RBA) Implied Policy Path",
     "section": "",
-    "text": "As-of Settlement Date: 2026-10-11 | Current Cash Rate: 4.60% | Next Board Decision Implied: 4.67% (+6.7 bps)"
+    "text": "As-of Settlement Date: 2026-11-18 | Current Cash Rate: 4.60% | Next Board Decision Implied: 4.86% (+26.0 bps)"
   },
   {
     "objectID": "rates_rba.html#implied-policy-rate-path",
@@ -18,7 +18,7 @@
     "href": "rates_rba.html#target-rate-probability-distribution",
     "title": "Reserve Bank of Australia (RBA) Implied Policy Path",
     "section": "Target Rate Probability Distribution",
-    "text": "Target Rate Probability Distribution\n\n\n                            \n                                            \n\n\n\nProbability Matrix\n#| echo: false\npivot_table = df_probs.pivot(index=“target_rate”, columns=“meeting_name”, values=”"
+    "text": "Target Rate Probability Distribution\n\n\n                            \n                                            \n\n\n\nProbability Matrix\n\n\n\n\n\n\n\n\nmeeting_name\nRBA Meeting: Dec 08, 2026\nRBA Meeting: Feb 09, 2027\nRBA Meeting: Jun 22, 2027\nRBA Meeting: Mar 23, 2027\nRBA Meeting: May 04, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n\n4.35%\n0.0\n0.00\n1.18\n0.00\n0.00\n\n\n4.60%\n0.0\n0.00\n18.62\n2.43\n5.60\n\n\n4.85%\n96.0\n76.03\n62.14\n74.34\n72.05\n\n\n5.10%\n4.0\n23.14\n17.41\n22.42\n21.47\n\n\n5.35%\n0.0\n0.83\n0.62\n0.81\n0.77\n\n\n\n\n\n\n\n\n\nMeeting-by-Meeting Probability Breakdown\n\n8/Dec9/Feb23/Mar4/May22/Jun"
   },
   {
     "objectID": "run_install.html",
@@ -39,7 +39,7 @@
     "href": "rates_boc.html",
     "title": "Bank of Canada (BoC) Implied Policy Path",
     "section": "",
-    "text": "As-of Settlement Date: 2026-10-11 | Current Target Rate: 2.25% | Next Decision Implied: 2.38% (+13.4 bps)"
+    "text": "As-of Settlement Date: 2026-11-18 | Current Target Rate: 2.25% | Next Decision Implied: 2.72% (+47.4 bps)"
   },
   {
     "objectID": "rates_boc.html#implied-policy-rate-path",
@@ -53,14 +53,14 @@
     "href": "rates_boc.html#target-rate-probability-distribution",
     "title": "Bank of Canada (BoC) Implied Policy Path",
     "section": "Target Rate Probability Distribution",
-    "text": "Target Rate Probability Distribution\n\n\n                            \n                                            \n\n\n\nProbability Matrix\n\n\n\n\n\n\n\n\nmeeting_name\nBoC Decision: Apr 28, 2027\nBoC Decision: Dec 08, 2027\nBoC Decision: Dec 09, 2026\nBoC Decision: Jan 27, 2027\nBoC Decision: Jul 21, 2027\nBoC Decision: Jun 02, 2027\nBoC Decision: Mar 03, 2027\nBoC Decision: Oct 27, 2027\nBoC Decision: Oct 28, 2026\nBoC Decision: Sep 08, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2.25%\n2.09\n0.00\n25.06\n10.72\n0.81\n1.28\n4.12\n0.00\n46.4\n0.00\n\n\n2.50%\n12.38\n3.01\n50.29\n35.86\n5.77\n8.39\n20.37\n3.09\n53.6\n3.79\n\n\n2.75%\n28.91\n10.59\n24.66\n39.32\n17.30\n22.50\n37.18\n10.80\n0.0\n12.69\n\n\n3.00%\n33.35\n21.21\n0.00\n14.10\n28.27\n31.63\n29.64\n21.51\n0.0\n23.88\n\n\n3.25%\n18.99\n26.67\n0.00\n0.00\n27.16\n24.56\n8.69\n26.82\n0.0\n27.61\n\n\n3.50%\n4.27\n21.82\n0.00\n0.00\n15.35\n9.99\n0.00\n21.67\n0.0\n20.08\n\n\n3.75%\n0.00\n11.62\n0.00\n0.00\n4.72\n1.66\n0.00\n11.33\n0.0\n8.97\n\n\n4.00%\n0.00\n3.89\n0.00\n0.00\n0.61\n0.00\n0.00\n3.68\n0.0\n2.26\n\n\n4.25%\n0.00\n0.75\n0.00\n0.00\n0.00\n0.00\n0.00\n0.67\n0.0\n0.00"
+    "text": "Target Rate Probability Distribution\n\n\n                            \n                                            \n\n\n\nProbability Matrix\n\n\n\n\n\n\n\n\nmeeting_name\nBoC Decision: Apr 28, 2027\nBoC Decision: Dec 08, 2027\nBoC Decision: Dec 09, 2026\nBoC Decision: Jan 27, 2027\nBoC Decision: Jul 21, 2027\nBoC Decision: Jun 02, 2027\nBoC Decision: Mar 03, 2027\nBoC Decision: Oct 27, 2027\nBoC Decision: Sep 08, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n\n\n\n\n\n2.50%\n2.11\n0.72\n10.4\n7.40\n1.20\n1.56\n3.58\n0.73\n0.86\n\n\n2.75%\n22.73\n8.62\n89.6\n66.79\n13.70\n17.37\n36.15\n8.78\n10.20\n\n\n3.00%\n42.50\n24.46\n0.0\n25.80\n32.72\n37.36\n46.95\n24.78\n27.40\n\n\n3.25%\n27.17\n31.70\n0.0\n0.00\n32.60\n31.16\n13.32\n31.84\n32.63\n\n\n3.50%\n5.49\n22.52\n0.0\n0.00\n15.77\n11.12\n0.00\n22.33\n20.48\n\n\n3.75%\n0.00\n9.37\n0.0\n0.00\n3.68\n1.43\n0.00\n9.10\n7.06\n\n\n4.00%\n0.00\n2.29\n0.0\n0.00\n0.00\n0.00\n0.00\n2.15\n1.27\n\n\n\n\n\n\n\n\n\nMeeting-by-Meeting Probability Breakdown\n\n9/Dec27/Jan3/Mar28/Apr2/Jun21/Jul8/Sep27/Oct"
   },
   {
     "objectID": "rates_boe.html",
     "href": "rates_boe.html",
     "title": "Bank of England (BoE) Implied Policy Path",
     "section": "",
-    "text": "As-of Settlement Date: 2026-10-11 | Current Bank Rate: 3.75% | Next Meeting Implied: 4.04% (+28.9 bps)"
+    "text": "As-of Settlement Date: 2026-11-18 | Current Bank Rate: 3.75% | Next Meeting Implied: 4.26% (+51.2 bps)"
   },
   {
     "objectID": "rates_boe.html#implied-policy-rate-path",
@@ -74,7 +74,7 @@
     "href": "rates_boe.html#target-rate-probability-distribution",
     "title": "Bank of England (BoE) Implied Policy Path",
     "section": "Target Rate Probability Distribution",
-    "text": "Target Rate Probability Distribution\n\n\n                            \n                                            \n\n\n\nProbability Matrix\n\n\n\n\n\n\n\n\nmeeting_name\nBoE Meeting: Apr 29, 2027\nBoE Meeting: Dec 17, 2026\nBoE Meeting: Feb 04, 2027\nBoE Meeting: Jul 29, 2027\nBoE Meeting: Jun 17, 2027\nBoE Meeting: Mar 18, 2027\nBoE Meeting: Nov 04, 2027\nBoE Meeting: Nov 05, 2026\nBoE Meeting: Sep 16, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n\n\n\n\n\n4.00%\n1.76\n41.86\n15.41\n0.78\n1.10\n4.07\n0.57\n84.4\n0.62\n\n\n4.25%\n12.34\n50.28\n44.96\n6.24\n8.40\n23.21\n4.75\n15.6\n5.17\n\n\n4.50%\n31.43\n7.86\n34.67\n19.61\n24.33\n42.24\n15.90\n0.0\n16.99\n\n\n4.75%\n35.58\n0.00\n4.97\n31.16\n34.04\n26.83\n27.80\n0.0\n28.90\n\n\n5.00%\n16.82\n0.00\n0.00\n26.83\n23.80\n3.66\n27.79\n0.0\n27.68\n\n\n5.25%\n2.08\n0.00\n0.00\n12.37\n7.56\n0.00\n16.35\n0.0\n15.20\n\n\n5.50%\n0.00\n0.00\n0.00\n2.78\n0.77\n0.00\n5.63\n0.0\n4.66\n\n\n5.75%\n0.00\n0.00\n0.00\n0.00\n0.00\n0.00\n1.09\n0.0\n0.73"
+    "text": "Target Rate Probability Distribution\n\n\n                            \n                                            \n\n\n\nProbability Matrix\n\n\n\n\n\n\n\n\nmeeting_name\nBoE Meeting: Apr 29, 2027\nBoE Meeting: Dec 17, 2026\nBoE Meeting: Feb 04, 2027\nBoE Meeting: Jul 29, 2027\nBoE Meeting: Jun 17, 2027\nBoE Meeting: Mar 18, 2027\nBoE Meeting: Nov 04, 2027\nBoE Meeting: Sep 16, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n\n\n\n\n4.25%\n6.56\n95.2\n56.36\n3.21\n4.36\n14.65\n2.42\n2.64\n\n\n4.50%\n31.63\n4.8\n41.68\n18.23\n23.21\n52.54\n14.50\n15.59\n\n\n4.75%\n43.05\n0.0\n1.96\n34.99\n39.21\n31.35\n30.66\n32.04\n\n\n5.00%\n17.96\n0.0\n0.00\n29.77\n26.39\n1.45\n30.80\n30.69\n\n\n5.25%\n0.80\n0.0\n0.00\n11.80\n6.56\n0.00\n16.28\n14.96\n\n\n5.50%\n0.00\n0.0\n0.00\n1.93\n0.00\n0.00\n4.62\n3.67\n\n\n5.75%\n0.00\n0.0\n0.00\n0.00\n0.00\n0.00\n0.67\n0.00\n\n\n\n\n\n\n\n\n\nMeeting-by-Meeting Probability Breakdown\n\n17/Dec4/Feb18/Mar29/Apr17/Jun29/Jul16/Sep4/Nov"
   },
   {
     "objectID": "rates_ecb.html",
@@ -102,21 +102,21 @@
     "href": "rates_ecb.html#probability-summary-data",
     "title": "European Central Bank Implied Rate",
     "section": "Probability Summary Data",
-    "text": "Probability Summary Data\n\n\n\n\n\n\n\n\nmeeting_name\nECB: Apr 29, 2027\nECB: Dec 17, 2026\nECB: Feb 04, 2027\nECB: Jul 22, 2027\nECB: Jun 10, 2027\nECB: Mar 18, 2027\nECB: Oct 28, 2027\nECB: Oct 29, 2026\nECB: Sep 09, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n\n\n\n\n\n2.50%\n1.3%\n9.1%\n5.5%\n0.8%\n1.0%\n2.2%\n0.6%\n9.6%\n0.7%\n\n\n2.75%\n15.7%\n86.5%\n55.9%\n10.2%\n12.4%\n25.3%\n8.2%\n90.4%\n8.8%\n\n\n3.00%\n38.8%\n4.3%\n36.9%\n29.5%\n33.6%\n48.4%\n25.2%\n-\n26.5%\n\n\n3.25%\n33.6%\n-\n1.7%\n34.6%\n34.8%\n23.1%\n33.3%\n-\n33.8%\n\n\n3.50%\n10.2%\n-\n-\n19.2%\n15.5%\n1.0%\n22.5%\n-\n21.6%\n\n\n3.75%\n0.4%\n-\n-\n5.1%\n2.6%\n-\n8.3%\n-\n7.3%\n\n\n4.00%\n-\n-\n-\n0.6%\n0.1%\n-\n1.7%\n-\n1.3%\n\n\n4.25%\n-\n-\n-\n0.0%\n-\n-\n0.2%\n-\n0.1%"
+    "text": "Probability Summary Data\n\n\n\n\n\n\n\n\nmeeting_name\nECB: Apr 29, 2027\nECB: Dec 17, 2026\nECB: Feb 04, 2027\nECB: Jul 22, 2027\nECB: Jun 10, 2027\nECB: Mar 18, 2027\nECB: Oct 28, 2027\nECB: Sep 09, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n\n\n\n\n2.50%\n0.4%\n2.0%\n1.4%\n0.3%\n0.3%\n0.7%\n0.2%\n0.2%\n\n\n2.75%\n22.5%\n98.0%\n68.8%\n14.6%\n17.8%\n34.8%\n11.9%\n12.7%\n\n\n3.00%\n44.2%\n-\n29.8%\n35.6%\n39.5%\n49.5%\n31.5%\n32.8%\n\n\n3.25%\n27.4%\n-\n-\n32.6%\n31.0%\n15.0%\n33.0%\n33.0%\n\n\n3.50%\n5.4%\n-\n-\n13.9%\n10.2%\n-\n17.5%\n16.4%\n\n\n3.75%\n-\n-\n-\n2.8%\n1.2%\n-\n5.1%\n4.3%\n\n\n4.00%\n-\n-\n-\n0.2%\n-\n-\n0.8%\n0.6%\n\n\n4.25%\n-\n-\n-\n-\n-\n-\n0.1%\n0.0%\n\n\n\n\n\n\n\n\nMeeting-by-Meeting Probability Breakdown\n\n17/Dec4/Feb18/Mar29/Apr10/Jun22/Jul9/Sep28/Oct"
   },
   {
     "objectID": "rates.html",
     "href": "rates.html",
     "title": "Global Interest Rates & Central Bank Policy",
     "section": "",
-    "text": "Below is a live cross-market summary derived from our automated regularized WLS bootstrapping engines across global exchange-traded futures.\n\n\n\n\n\nCentral Bank\nCurrent Policy Rate\nNext Meeting Date\nNext Implied Rate\nExpected Move (bps)\n\n\n\n\nFederal Reserve (Fed)\n5.25%\n2026-10-28\n0.00%\n-525.0 bps\n\n\nEuropean Central Bank (ECB)\n3.50%\n2026-10-29\n0.00%\n-350.0 bps\n\n\nBank of England (BoE)\n3.75%\n2026-11-05\n4.04%\n+28.9 bps\n\n\nBank of Japan (BoJ)\n1.25%\n2026-10-30\n1.25%\n+0.4 bps\n\n\nBank of Canada (BoC)\n2.25%\n2026-10-28\n2.38%\n+13.4 bps\n\n\nReserve Bank of Australia (RBA)\n4.60%\n2026-11-03\n4.67%\n+6.7 bps\n\n\nSwiss National Bank (SNB)\n0.00%\n2026-12-10\n0.07%\n+6.5 bps\n\n\n\n\n\n\n\n\n\n\n\nNoteCentral Bank Models Hub\n\n\n\nClick on any central bank above or navigate via the Rates menu to explore individual meeting-by-meeting probability distributions, Markov chain step trees, and term structure paths."
+    "text": "Below is a live cross-market summary derived from our automated regularized WLS bootstrapping engines across global exchange-traded futures.\n\n\n\n\n\nCentral Bank\nCurrent Policy Rate\nNext Meeting Date\nNext Implied Rate\nExpected Move (bps)\n\n\n\n\nFederal Reserve (Fed)\n3.88%\n2026-12-09\n4.15%\n+27.3 bps\n\n\nEuropean Central Bank (ECB)\n2.50%\n2026-12-17\n2.75%\n+24.5 bps\n\n\nBank of England (BoE)\n4.00%\n2026-12-17\n4.26%\n+26.2 bps\n\n\nBank of Japan (BoJ)\n1.25%\n2026-12-18\n1.46%\n+20.9 bps\n\n\nBank of Canada (BoC)\n2.50%\n2026-12-09\n2.72%\n+22.4 bps\n\n\nReserve Bank of Australia (RBA)\n4.85%\n2026-12-08\n4.86%\n+1.0 bps\n\n\nSwiss National Bank (SNB)\n0.00%\n2026-12-10\n0.04%\n+3.5 bps\n\n\n\n\n\n\n\n\n\n\n\nNoteCentral Bank Models Hub\n\n\n\nClick on any central bank above or navigate via the Rates menu to explore individual meeting-by-meeting probability distributions, Markov chain step trees, and term structure paths."
   },
   {
     "objectID": "rates.html#implied-policy-rates-central",
     "href": "rates.html#implied-policy-rates-central",
     "title": "Global Interest Rates & Central Bank Policy",
     "section": "",
-    "text": "Below is a live cross-market summary derived from our automated regularized WLS bootstrapping engines across global exchange-traded futures.\n\n\n\n\n\nCentral Bank\nCurrent Policy Rate\nNext Meeting Date\nNext Implied Rate\nExpected Move (bps)\n\n\n\n\nFederal Reserve (Fed)\n5.25%\n2026-10-28\n0.00%\n-525.0 bps\n\n\nEuropean Central Bank (ECB)\n3.50%\n2026-10-29\n0.00%\n-350.0 bps\n\n\nBank of England (BoE)\n3.75%\n2026-11-05\n4.04%\n+28.9 bps\n\n\nBank of Japan (BoJ)\n1.25%\n2026-10-30\n1.25%\n+0.4 bps\n\n\nBank of Canada (BoC)\n2.25%\n2026-10-28\n2.38%\n+13.4 bps\n\n\nReserve Bank of Australia (RBA)\n4.60%\n2026-11-03\n4.67%\n+6.7 bps\n\n\nSwiss National Bank (SNB)\n0.00%\n2026-12-10\n0.07%\n+6.5 bps\n\n\n\n\n\n\n\n\n\n\n\nNoteCentral Bank Models Hub\n\n\n\nClick on any central bank above or navigate via the Rates menu to explore individual meeting-by-meeting probability distributions, Markov chain step trees, and term structure paths."
+    "text": "Below is a live cross-market summary derived from our automated regularized WLS bootstrapping engines across global exchange-traded futures.\n\n\n\n\n\nCentral Bank\nCurrent Policy Rate\nNext Meeting Date\nNext Implied Rate\nExpected Move (bps)\n\n\n\n\nFederal Reserve (Fed)\n3.88%\n2026-12-09\n4.15%\n+27.3 bps\n\n\nEuropean Central Bank (ECB)\n2.50%\n2026-12-17\n2.75%\n+24.5 bps\n\n\nBank of England (BoE)\n4.00%\n2026-12-17\n4.26%\n+26.2 bps\n\n\nBank of Japan (BoJ)\n1.25%\n2026-12-18\n1.46%\n+20.9 bps\n\n\nBank of Canada (BoC)\n2.50%\n2026-12-09\n2.72%\n+22.4 bps\n\n\nReserve Bank of Australia (RBA)\n4.85%\n2026-12-08\n4.86%\n+1.0 bps\n\n\nSwiss National Bank (SNB)\n0.00%\n2026-12-10\n0.04%\n+3.5 bps\n\n\n\n\n\n\n\n\n\n\n\nNoteCentral Bank Models Hub\n\n\n\nClick on any central bank above or navigate via the Rates menu to explore individual meeting-by-meeting probability distributions, Markov chain step trees, and term structure paths."
   },
   {
     "objectID": "rates.html#research-publications",
@@ -144,7 +144,7 @@
     "href": "rates_fed.html#fomc-meeting-probabilities",
     "title": "US Federal Reserve — Implied Rates",
     "section": "FOMC Meeting Probabilities",
-    "text": "FOMC Meeting Probabilities"
+    "text": "FOMC Meeting Probabilities\n\n\n                            \n                                            \n\n\n\nMeeting-by-Meeting Probability Breakdown\n\n9/Dec27/Jan17/Mar28/Apr9/Jun"
   },
   {
     "objectID": "metals.html",
@@ -175,32 +175,32 @@
     "text": "Sections\n\nInterest Rate Watch\nRepo Rates Monitor\nMetals Stocks, Trade Volume, Open Interest Watch\nMacroeconomic Analysis\nFinancial and Commodity Plumbing\nTrade Finance\nCommodity Indices\nRate Indices\nQuantitative Methods"
   },
   {
-    "objectID": "rates_SNB.html",
-    "href": "rates_SNB.html",
+    "objectID": "rates_snb.html",
+    "href": "rates_snb.html",
     "title": "Swiss National Bank (SNB) Implied Policy Path",
     "section": "",
-    "text": "As-of Settlement Date: 2026-10-11 | Current SNB Policy Rate: 0.00% | Next Assessment Implied: 0.07% (+6.5 bps)"
+    "text": "As-of Settlement Date: 2026-11-18 | Current SNB Policy Rate: 0.00% | Next Assessment Implied: 0.04% (+3.5 bps)"
   },
   {
-    "objectID": "rates_SNB.html#implied-policy-rate-path",
-    "href": "rates_SNB.html#implied-policy-rate-path",
+    "objectID": "rates_snb.html#implied-policy-rate-path",
+    "href": "rates_snb.html#implied-policy-rate-path",
     "title": "Swiss National Bank (SNB) Implied Policy Path",
     "section": "Implied Policy Rate Path",
     "text": "Implied Policy Rate Path"
   },
   {
-    "objectID": "rates_SNB.html#target-rate-probability-distribution",
-    "href": "rates_SNB.html#target-rate-probability-distribution",
+    "objectID": "rates_snb.html#target-rate-probability-distribution",
+    "href": "rates_snb.html#target-rate-probability-distribution",
     "title": "Swiss National Bank (SNB) Implied Policy Path",
     "section": "Target Rate Probability Distribution",
-    "text": "Target Rate Probability Distribution\n\n\n                            \n                                            \n\n\n\nProbability Matrix\n\n\n\n\n\n\n\n\nmeeting_name\nSNB Assessment: Dec 10, 2026\nSNB Assessment: Jun 17, 2027\nSNB Assessment: Mar 18, 2027\nSNB Assessment: Sep 23, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n0.00%\n74.0\n7.13\n25.46\n2.68\n\n\n0.25%\n26.0\n34.42\n57.49\n17.39\n\n\n0.50%\n0.0\n46.17\n17.06\n38.84\n\n\n0.75%\n0.0\n12.28\n0.00\n33.43\n\n\n1.00%\n0.0\n0.00\n0.00\n7.66"
+    "text": "Target Rate Probability Distribution\n\n\n                            \n                                            \n\n\n\nProbability Matrix\n\n\n\n\n\n\n\n\nmeeting_name\nSNB Assessment: Dec 10, 2026\nSNB Assessment: Jun 17, 2027\nSNB Assessment: Mar 18, 2027\nSNB Assessment: Sep 23, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n0.00%\n86.0\n6.84\n24.42\n2.41\n\n\n0.25%\n14.0\n35.94\n65.55\n17.08\n\n\n0.50%\n0.0\n50.00\n10.02\n40.89\n\n\n0.75%\n0.0\n7.22\n0.00\n34.94\n\n\n1.00%\n0.0\n0.00\n0.00\n4.68\n\n\n\n\n\n\n\n\n\nMeeting-by-Meeting Probability Breakdown\n\n10/Dec18/Mar17/Jun23/Sep"
   },
   {
     "objectID": "rates_boj.html",
     "href": "rates_boj.html",
     "title": "Bank of Japan (BoJ) Implied Policy Path",
     "section": "",
-    "text": "As-of Settlement Date: 2026-10-11 | Current Policy Rate: 1.25% | Next Meeting Implied: 1.25% (+0.4 bps)"
+    "text": "As-of Settlement Date: 2026-11-18 | Current Policy Rate: 1.25% | Next Meeting Implied: 1.46% (+20.9 bps)"
   },
   {
     "objectID": "rates_boj.html#implied-policy-rate-path",
@@ -214,6 +214,6 @@
     "href": "rates_boj.html#target-rate-probability-distribution",
     "title": "Bank of Japan (BoJ) Implied Policy Path",
     "section": "Target Rate Probability Distribution",
-    "text": "Target Rate Probability Distribution\n\n\n                            \n                                            \n\n\n\nProbability Matrix\n\n\n\n\n\n\n\n\nmeeting_name\nBoJ Meeting: Apr 28, 2027\nBoJ Meeting: Dec 18, 2026\nBoJ Meeting: Jan 22, 2027\nBoJ Meeting: Jul 30, 2027\nBoJ Meeting: Jun 18, 2027\nBoJ Meeting: Mar 19, 2027\nBoJ Meeting: Oct 29, 2027\nBoJ Meeting: Oct 30, 2026\nBoJ Meeting: Sep 17, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n\n\n\n\n\n1.25%\n4.54\n34.64\n14.69\n1.84\n2.79\n7.93\n1.15\n98.4\n1.34\n\n\n1.50%\n21.85\n64.33\n47.23\n10.98\n15.20\n32.26\n7.49\n1.6\n8.50\n\n\n1.75%\n37.81\n1.04\n37.49\n26.08\n31.68\n41.97\n20.08\n0.0\n21.97\n\n\n2.00%\n28.01\n0.00\n0.60\n31.74\n31.78\n17.57\n29.05\n0.0\n30.20\n\n\n2.25%\n7.68\n0.00\n0.00\n21.02\n15.49\n0.00\n24.82\n0.0\n23.94\n\n\n2.50%\n0.00\n0.00\n0.00\n7.26\n3.02\n0.00\n12.81\n0.0\n11.00\n\n\n2.75%\n0.00\n0.00\n0.00\n1.06\n0.00\n0.00\n3.90\n0.0\n2.74\n\n\n3.00%\n0.00\n0.00\n0.00\n0.00\n0.00\n0.00\n0.64\n0.0\n0.00"
+    "text": "Target Rate Probability Distribution\n\n\n                            \n                                            \n\n\n\nProbability Matrix\n\n\n\n\n\n\n\n\nmeeting_name\nBoJ Meeting: Apr 28, 2027\nBoJ Meeting: Dec 18, 2026\nBoJ Meeting: Jan 22, 2027\nBoJ Meeting: Jul 30, 2027\nBoJ Meeting: Jun 18, 2027\nBoJ Meeting: Mar 19, 2027\nBoJ Meeting: Oct 29, 2027\nBoJ Meeting: Sep 17, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n\n\n\n\n1.25%\n4.62\n16.4\n13.32\n2.58\n3.34\n7.35\n1.93\n2.12\n\n\n1.50%\n31.08\n83.6\n70.97\n19.12\n23.78\n45.14\n14.91\n16.14\n\n\n1.75%\n42.21\n0.0\n15.72\n35.63\n39.14\n40.47\n31.21\n32.66\n\n\n2.00%\n19.48\n0.0\n0.00\n28.80\n25.75\n7.04\n30.26\n30.03\n\n\n2.25%\n2.62\n0.0\n0.00\n11.48\n7.27\n0.00\n15.96\n14.60\n\n\n2.50%\n0.00\n0.0\n0.00\n2.22\n0.72\n0.00\n4.83\n3.88\n\n\n2.75%\n0.00\n0.0\n0.00\n0.00\n0.00\n0.00\n0.83\n0.53\n\n\n\n\n\n\n\n\n\nMeeting-by-Meeting Probability Breakdown\n\n18/Dec22/Jan19/Mar28/Apr18/Jun30/Jul17/Sep29/Oct"
   }
 ]

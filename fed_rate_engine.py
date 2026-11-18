@@ -8,7 +8,7 @@ from scipy.optimize import lsq_linear
 # ==============================================================================
 # 1. CONFIGURATION & OFFICIAL FOMC CALENDAR
 # ==============================================================================
-CURRENT_EFFR = 3.63  # Update if EFFR changes
+CURRENT_EFFR = 3.88  # Update if EFFR changes
 
 FOMC_MEETINGS = [
     # 2026

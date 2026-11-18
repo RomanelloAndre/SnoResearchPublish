@@ -58,3 +58,13 @@ fig_probs.update_traces(texttemplate="%{text:.1f}%", textposition="outside")
 fig_probs.update_layout(yaxis_range=[0, 105], template="plotly_white", margin=dict(l=40, r=40, t=60, b=40), height=480)
 fig_probs.show()
 ```
+
+### Meeting-by-Meeting Probability Breakdown
+
+```{python}
+#| echo: false
+#| output: asis
+from meeting_tabs import render_meeting_tabs
+
+render_meeting_tabs("data/fomc_probabilities.csv", "fed_rate_engine.py", "CURRENT_EFFR")
+```

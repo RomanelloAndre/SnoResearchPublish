@@ -17,7 +17,7 @@ from scipy.optimize import lsq_linear
 # ==============================================================================
 # 1. GLOBAL INPUTS & OFFICIAL BOC CALENDAR
 # ==============================================================================
-CURRENT_BOC_RATE = 2.25   # Current Bank of Canada Target Overnight Rate (%)
+CURRENT_BOC_RATE = 2.50   # Current Bank of Canada Target Overnight Rate (%)
 SPREAD_BPS = 0.00         # CORRA tracks BoC target rate directly (0.00% spread)
 SMOOTHNESS_LAMBDA = 1e-3  # Policy inertia regularization penalty
 
@@ -122,7 +122,7 @@ def deaverage_3m_corra_curve(current_policy_rate, spread_bps, prices, as_of_date
         return []
 
     first_eff_date = future_meetings[0]["effective_date"]
-    active_contracts = {k: v for k, v in valid_contracts.items() if v["end"] > first_eff_date}
+    active_contracts = {k: v for k, v in valid_contracts.items() if v["start"] >= today}
 
     if not active_contracts:
         print("⚠️ Warning: No active contracts covering post-meeting periods.")

@@ -103,3 +103,13 @@ pivot_table = df_probs.pivot(
 pivot_table = pivot_table.map(lambda x: f"{x:.1f}%" if x > 0 else "-")
 pivot_table
 ```
+
+### Meeting-by-Meeting Probability Breakdown
+
+```{python}
+#| echo: false
+#| output: asis
+from meeting_tabs import render_meeting_tabs
+
+render_meeting_tabs("data/ecb_probabilities.csv", "ecb_rate_engine.py", "CURRENT_DFR")
+```

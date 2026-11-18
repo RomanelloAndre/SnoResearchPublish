@@ -84,4 +84,17 @@ fig_probs.show()
 ```{python}
 #| echo: false
 
-pivot_table = df_probs.pivot(index="target_rate", columns="meeting_name", values="
+pivot_table = df_probs.pivot(index="target_rate", columns="meeting_name", values="probability").fillna(0.0)
+pivot_table
+```
+
+
+### Meeting-by-Meeting Probability Breakdown
+
+```{python}
+#| echo: false
+#| output: asis
+from meeting_tabs import render_meeting_tabs
+
+render_meeting_tabs("data/rba_probabilities.csv", "rba_rate_engine.py", "CURRENT_RBA_RATE")
+```

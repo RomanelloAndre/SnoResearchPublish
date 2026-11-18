@@ -17,7 +17,7 @@ from scipy.optimize import lsq_linear
 # ==============================================================================
 # 1. GLOBAL INPUTS & OFFICIAL MPC CALENDAR
 # ==============================================================================
-CURRENT_BANK_RATE = 3.75   # Official Bank of England Bank Rate (%)
+CURRENT_BANK_RATE = 4.0   # Official Bank of England Bank Rate (%)
 SPREAD_BPS = 0.03          # SONIA fixes ~3 bps below Bank Rate (added to futures yield)
 SMOOTHNESS_LAMBDA = 1e-3   # Regularization penalty to prevent step-function spikes
 

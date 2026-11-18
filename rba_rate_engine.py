@@ -17,7 +17,7 @@ from scipy.optimize import lsq_linear
 # ==============================================================================
 # 1. GLOBAL INPUTS & OFFICIAL RBA BOARD CALENDAR
 # ==============================================================================
-CURRENT_RBA_RATE = 4.60   # Current RBA Target Cash Rate (%)
+CURRENT_RBA_RATE = 4.85   # Current RBA Target Cash Rate (%)
 SPREAD_BPS = 0.00         # 30-Day Futures track Cash Rate target directly (0.00% spread)
 SMOOTHNESS_LAMBDA = 1e-3  # Regularization penalty to prevent step-function oscillation
 
