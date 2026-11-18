@@ -175,22 +175,22 @@
     "text": "Sections\n\nInterest Rate Watch\nRepo Rates Monitor\nMetals Stocks, Trade Volume, Open Interest Watch\nMacroeconomic Analysis\nFinancial and Commodity Plumbing\nTrade Finance\nCommodity Indices\nRate Indices\nQuantitative Methods"
   },
   {
-    "objectID": "rates_SNB.html",
-    "href": "rates_SNB.html",
+    "objectID": "rates_snb.html",
+    "href": "rates_snb.html",
     "title": "Swiss National Bank (SNB) Implied Policy Path",
     "section": "",
     "text": "As-of Settlement Date: 2026-11-18 | Current SNB Policy Rate: 0.00% | Next Assessment Implied: 0.04% (+3.5 bps)"
   },
   {
-    "objectID": "rates_SNB.html#implied-policy-rate-path",
-    "href": "rates_SNB.html#implied-policy-rate-path",
+    "objectID": "rates_snb.html#implied-policy-rate-path",
+    "href": "rates_snb.html#implied-policy-rate-path",
     "title": "Swiss National Bank (SNB) Implied Policy Path",
     "section": "Implied Policy Rate Path",
     "text": "Implied Policy Rate Path"
   },
   {
-    "objectID": "rates_SNB.html#target-rate-probability-distribution",
-    "href": "rates_SNB.html#target-rate-probability-distribution",
+    "objectID": "rates_snb.html#target-rate-probability-distribution",
+    "href": "rates_snb.html#target-rate-probability-distribution",
     "title": "Swiss National Bank (SNB) Implied Policy Path",
     "section": "Target Rate Probability Distribution",
     "text": "Target Rate Probability Distribution\n\n\n                            \n                                            \n\n\n\nProbability Matrix\n\n\n\n\n\n\n\n\nmeeting_name\nSNB Assessment: Dec 10, 2026\nSNB Assessment: Jun 17, 2027\nSNB Assessment: Mar 18, 2027\nSNB Assessment: Sep 23, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n0.00%\n86.0\n6.84\n24.42\n2.41\n\n\n0.25%\n14.0\n35.94\n65.55\n17.08\n\n\n0.50%\n0.0\n50.00\n10.02\n40.89\n\n\n0.75%\n0.0\n7.22\n0.00\n34.94\n\n\n1.00%\n0.0\n0.00\n0.00\n4.68\n\n\n\n\n\n\n\n\n\nMeeting-by-Meeting Probability Breakdown\n\n10/Dec18/Mar17/Jun23/Sep"
