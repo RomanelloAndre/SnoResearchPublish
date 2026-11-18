@@ -39,7 +39,7 @@
     "href": "rates_boc.html",
     "title": "Bank of Canada (BoC) Implied Policy Path",
     "section": "",
-    "text": "As-of Settlement Date: 2026-11-18 | Current Target Rate: 2.25% | Next Decision Implied: 2.08% (-17.4 bps)"
+    "text": "As-of Settlement Date: 2026-11-18 | Current Target Rate: 2.25% | Next Decision Implied: 2.69% (+44.2 bps)"
   },
   {
     "objectID": "rates_boc.html#implied-policy-rate-path",
@@ -53,7 +53,7 @@
     "href": "rates_boc.html#target-rate-probability-distribution",
     "title": "Bank of Canada (BoC) Implied Policy Path",
     "section": "Target Rate Probability Distribution",
-    "text": "Target Rate Probability Distribution\n\n\n                            \n                                            \n\n\n\nProbability Matrix\n\n\n\n\n\n\n\n\nmeeting_name\nBoC Decision: Apr 28, 2027\nBoC Decision: Dec 08, 2027\nBoC Decision: Dec 09, 2026\nBoC Decision: Jan 27, 2027\nBoC Decision: Jul 21, 2027\nBoC Decision: Jun 02, 2027\nBoC Decision: Mar 03, 2027\nBoC Decision: Oct 27, 2027\nBoC Decision: Sep 08, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n\n\n\n\n\n2.00%\n0.00\n0.00\n69.6\n0.00\n0.00\n0.00\n0.00\n0.00\n0.00\n\n\n2.25%\n3.19\n0.00\n30.4\n0.00\n0.00\n0.79\n0.00\n0.00\n0.00\n\n\n2.50%\n19.90\n1.09\n0.0\n0.00\n1.26\n7.33\n0.00\n1.09\n1.11\n\n\n2.75%\n40.58\n7.53\n0.0\n0.00\n8.61\n25.02\n11.39\n7.53\n7.67\n\n\n3.00%\n29.61\n23.41\n0.0\n0.00\n25.95\n37.86\n41.78\n23.41\n23.73\n\n\n3.25%\n6.73\n35.22\n0.0\n39.53\n36.85\n23.93\n37.48\n35.22\n35.46\n\n\n3.50%\n0.00\n24.62\n0.0\n47.33\n22.58\n5.06\n9.35\n24.62\n24.40\n\n\n3.75%\n0.00\n7.33\n0.0\n13.13\n4.70\n0.00\n0.00\n7.33\n6.99\n\n\n4.00%\n0.00\n0.73\n0.0\n0.00\n0.00\n0.00\n0.00\n0.73\n0.60"
+    "text": "Target Rate Probability Distribution\n\n\n                            \n                                            \n\n\n\nProbability Matrix\n\n\n\n\n\n\n\n\nmeeting_name\nBoC Decision: Apr 28, 2027\nBoC Decision: Dec 08, 2027\nBoC Decision: Dec 09, 2026\nBoC Decision: Jan 27, 2027\nBoC Decision: Jul 21, 2027\nBoC Decision: Jun 02, 2027\nBoC Decision: Mar 03, 2027\nBoC Decision: Oct 27, 2027\nBoC Decision: Sep 08, 2027\n\n\ntarget_rate\n\n\n\n\n\n\n\n\n\n\n\n\n\n2.50%\n4.24\n1.26\n23.2\n16.24\n2.29\n3.09\n7.47\n1.28\n1.55\n\n\n2.75%\n24.07\n8.92\n76.8\n60.72\n14.63\n18.68\n36.70\n9.07\n10.68\n\n\n3.00%\n40.50\n23.11\n0.0\n23.04\n31.52\n36.03\n43.39\n23.40\n26.11\n\n\n3.25%\n25.81\n30.37\n0.0\n0.00\n31.42\n29.81\n12.44\n30.51\n31.45\n\n\n3.50%\n5.37\n22.85\n0.0\n0.00\n15.84\n10.93\n0.00\n22.70\n20.83\n\n\n3.75%\n0.00\n10.29\n0.0\n0.00\n3.92\n1.46\n0.00\n10.04\n7.74\n\n\n4.00%\n0.00\n2.76\n0.0\n0.00\n0.00\n0.00\n0.00\n2.61\n1.51"
   },
   {
     "objectID": "rates_boe.html",
@@ -109,14 +109,14 @@
     "href": "rates.html",
     "title": "Global Interest Rates & Central Bank Policy",
     "section": "",
-    "text": "Below is a live cross-market summary derived from our automated regularized WLS bootstrapping engines across global exchange-traded futures.\n\n\n\n\n\nCentral Bank\nCurrent Policy Rate\nNext Meeting Date\nNext Implied Rate\nExpected Move (bps)\n\n\n\n\nFederal Reserve (Fed)\n3.88%\n2026-12-09\n4.14%\n+26.1 bps\n\n\nEuropean Central Bank (ECB)\n2.50%\n2026-12-17\n2.74%\n+24.4 bps\n\n\nBank of England (BoE)\n4.00%\n2026-12-17\n4.27%\n+26.6 bps\n\n\nBank of Japan (BoJ)\n1.25%\n2026-12-18\n1.46%\n+21.1 bps\n\n\nBank of Canada (BoC)\n2.50%\n2026-12-09\n2.08%\n-42.4 bps\n\n\nReserve Bank of Australia (RBA)\n4.85%\n2026-12-08\n4.86%\n+1.2 bps\n\n\nSwiss National Bank (SNB)\n0.00%\n2026-12-10\n0.03%\n+3.0 bps\n\n\n\n\n\n\n\n\n\n\n\nNoteCentral Bank Models Hub\n\n\n\nClick on any central bank above or navigate via the Rates menu to explore individual meeting-by-meeting probability distributions, Markov chain step trees, and term structure paths."
+    "text": "Below is a live cross-market summary derived from our automated regularized WLS bootstrapping engines across global exchange-traded futures.\n\n\n\n\n\nCentral Bank\nCurrent Policy Rate\nNext Meeting Date\nNext Implied Rate\nExpected Move (bps)\n\n\n\n\nFederal Reserve (Fed)\n3.88%\n2026-12-09\n4.14%\n+26.1 bps\n\n\nEuropean Central Bank (ECB)\n2.50%\n2026-12-17\n2.74%\n+24.4 bps\n\n\nBank of England (BoE)\n4.00%\n2026-12-17\n4.27%\n+26.6 bps\n\n\nBank of Japan (BoJ)\n1.25%\n2026-12-18\n1.46%\n+21.1 bps\n\n\nBank of Canada (BoC)\n2.50%\n2026-12-09\n2.69%\n+19.2 bps\n\n\nReserve Bank of Australia (RBA)\n4.85%\n2026-12-08\n4.86%\n+1.2 bps\n\n\nSwiss National Bank (SNB)\n0.00%\n2026-12-10\n0.03%\n+3.0 bps\n\n\n\n\n\n\n\n\n\n\n\nNoteCentral Bank Models Hub\n\n\n\nClick on any central bank above or navigate via the Rates menu to explore individual meeting-by-meeting probability distributions, Markov chain step trees, and term structure paths."
   },
   {
     "objectID": "rates.html#implied-policy-rates-central",
     "href": "rates.html#implied-policy-rates-central",
     "title": "Global Interest Rates & Central Bank Policy",
     "section": "",
-    "text": "Below is a live cross-market summary derived from our automated regularized WLS bootstrapping engines across global exchange-traded futures.\n\n\n\n\n\nCentral Bank\nCurrent Policy Rate\nNext Meeting Date\nNext Implied Rate\nExpected Move (bps)\n\n\n\n\nFederal Reserve (Fed)\n3.88%\n2026-12-09\n4.14%\n+26.1 bps\n\n\nEuropean Central Bank (ECB)\n2.50%\n2026-12-17\n2.74%\n+24.4 bps\n\n\nBank of England (BoE)\n4.00%\n2026-12-17\n4.27%\n+26.6 bps\n\n\nBank of Japan (BoJ)\n1.25%\n2026-12-18\n1.46%\n+21.1 bps\n\n\nBank of Canada (BoC)\n2.50%\n2026-12-09\n2.08%\n-42.4 bps\n\n\nReserve Bank of Australia (RBA)\n4.85%\n2026-12-08\n4.86%\n+1.2 bps\n\n\nSwiss National Bank (SNB)\n0.00%\n2026-12-10\n0.03%\n+3.0 bps\n\n\n\n\n\n\n\n\n\n\n\nNoteCentral Bank Models Hub\n\n\n\nClick on any central bank above or navigate via the Rates menu to explore individual meeting-by-meeting probability distributions, Markov chain step trees, and term structure paths."
+    "text": "Below is a live cross-market summary derived from our automated regularized WLS bootstrapping engines across global exchange-traded futures.\n\n\n\n\n\nCentral Bank\nCurrent Policy Rate\nNext Meeting Date\nNext Implied Rate\nExpected Move (bps)\n\n\n\n\nFederal Reserve (Fed)\n3.88%\n2026-12-09\n4.14%\n+26.1 bps\n\n\nEuropean Central Bank (ECB)\n2.50%\n2026-12-17\n2.74%\n+24.4 bps\n\n\nBank of England (BoE)\n4.00%\n2026-12-17\n4.27%\n+26.6 bps\n\n\nBank of Japan (BoJ)\n1.25%\n2026-12-18\n1.46%\n+21.1 bps\n\n\nBank of Canada (BoC)\n2.50%\n2026-12-09\n2.69%\n+19.2 bps\n\n\nReserve Bank of Australia (RBA)\n4.85%\n2026-12-08\n4.86%\n+1.2 bps\n\n\nSwiss National Bank (SNB)\n0.00%\n2026-12-10\n0.03%\n+3.0 bps\n\n\n\n\n\n\n\n\n\n\n\nNoteCentral Bank Models Hub\n\n\n\nClick on any central bank above or navigate via the Rates menu to explore individual meeting-by-meeting probability distributions, Markov chain step trees, and term structure paths."
   },
   {
     "objectID": "rates.html#research-publications",
